@@ -1,0 +1,108 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme portfolio design system */
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 198 93% 60%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 63%;
+
+    --accent: 198 93% 60%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 198 93% 60%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-dark-bg text-foreground font-sans;
+    background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-electric-blue to-neon-cyan bg-clip-text text-transparent;
+  }
+  
+  .glow-border {
+    @apply border border-electric-blue/30 shadow-[0_0_20px_rgba(14,165,233,0.3)];
+  }
+  
+  .card-glow {
+    @apply bg-dark-card/50 border border-electric-blue/20 backdrop-blur-sm;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(14, 165, 233, 0.1);
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-electric-blue to-neon-cyan text-white font-semibold px-8 py-3 rounded-lg;
+    @apply hover:shadow-[0_0_30px_rgba(14,165,233,0.5)] transition-all duration-300;
+    @apply transform hover:scale-105;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0ea5e9, #06ffa5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0284c7, #059669);
+}
+
+/* Particle canvas styling */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}

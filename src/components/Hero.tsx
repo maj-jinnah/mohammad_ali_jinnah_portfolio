@@ -61,13 +61,14 @@ const Hero = () => {
                     </div>
 
                     <p className="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed drop-shadow-lg">
-                        I’m a backend-first full-stack developer who thinks in
-                        services, APIs, and data models. Most of my work is in
-                        JavaScript — Node.js on the server and Next.js on the
-                        client — which lets me ship full-stack features quickly
-                        without context switching. I focus on building systems
-                        that are easy to understand, easy to operate, and easy
-                        to extend.
+                        I am a backend-focused full-stack developer who
+                        specializes in services, APIs, and data models. Most of
+                        my work involves JavaScript and TypeScript, using
+                        Node.js on the server and Next.js on the client. This
+                        allows me to efficiently deliver full-stack applications
+                        without the need to switch to other programming
+                        languages. I focus on building systems that are easy to
+                        understand, easy to operate, and easy to extend.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

@@ -41,18 +41,18 @@ const About = () => {
                                 Passionate Developer & Problem Solver
                             </h3>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                With over 2 years of experience in full-stack
-                                development, I specialize in creating robust,
+                                With over two years of experience in full-stack
+                                development, I specialize in creating robust and
                                 scalable applications that deliver exceptional
-                                user experiences. My journey began with a
-                                curiosity for how things work, which evolved
-                                into a passion for building solutions that make
-                                a difference.
+                                user experiences. My journey started with a
+                                curiosity about how things work, which has since
+                                evolved into a passion for building solutions
+                                that make a meaningful difference.
                             </p>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 I thrive on challenges and continuously learn
-                                new technologies to stay at the forefront of the
-                                web development. Whether it's architecting
+                                new technologies to remain at the forefront of
+                                web development. Whether I am architecting
                                 complex systems or solving critical problems, I
                                 bring dedication and expertise to every project.
                             </p>
@@ -62,8 +62,8 @@ const About = () => {
                                     "Node.js",
                                     "Express",
                                     "React",
+                                    "Next.js",
                                     "PostgreSQL",
-                                    "MongoDB",
                                 ].map((tech) => (
                                     <span
                                         key={tech}

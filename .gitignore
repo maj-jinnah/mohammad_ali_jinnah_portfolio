@@ -25,9 +25,5 @@ dist-ssr
 
 .vercel
 
-
-src/components/ui
-src/components/Projects.tsx
 src/components/Contact.tsx
 src/components/Footer.tsx
-public

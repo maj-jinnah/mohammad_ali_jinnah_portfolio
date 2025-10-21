@@ -22,8 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.env
 
 .vercel
-
-src/components/Contact.tsx
-src/components/Footer.tsx
